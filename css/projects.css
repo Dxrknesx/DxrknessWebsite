@@ -1,0 +1,122 @@
+.projects_section {
+    margin-top: 300px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Catalya */
+.catalya {
+    margin: 0 auto;
+    padding: 2em;
+    width: 300px;
+    background: #1e1622;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.catalya::after, .catalya::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #53cdfc, #3a0057, #3a0057, #53cdfc);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+.catalya::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+/* Catalya */
+
+/* Paradoxon */
+.paradoxon {
+    margin: 0 auto;
+    padding: 2em;
+    width: 300px;
+    background: #1e1622;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.paradoxon::after, .paradoxon::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #53cdfc, #3a0057, #3a0057, #53cdfc);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+.paradoxon::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+/* Paradoxon */
+
+/* Yota */
+.yota {
+    margin: 0 auto;
+    padding: 2em;
+    width: 300px;
+    background: #1e1622;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.yota::after, .yota::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #53cdfc, #3a0057, #3a0057, #53cdfc);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+.yota::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+/* Yota */
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+}
+
+.footer {
+    margin-top: 360px;
+}

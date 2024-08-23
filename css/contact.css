@@ -1,0 +1,56 @@
+.contact_section {
+    margin-top: 300px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    margin: 0 auto;
+    padding: 1.5em;
+    width: 350px;
+    background: #1e1622;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.contact::after, .contact::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #53cdfc, #3a0057, #3a0057, #53cdfc);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+.contact::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+}
+
+.footer {
+    margin-top: 343px;
+}
